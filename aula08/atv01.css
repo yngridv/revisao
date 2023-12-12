@@ -1,0 +1,159 @@
+.box{
+    height: 650px;
+    display: grid;
+    grid-template-areas: "Header Header Header"
+                         "MenuR Main Right"
+                         "Footer Footer Footer";
+    
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-columns: 80px 1fr 150px;    
+    background-color: white;
+    padding: 10px;
+    gap: 5px;
+
+}
+
+.Header{
+    background-color: palegreen;
+    grid-area: Header;
+    text-align: center;
+    padding-top: 40px;
+   
+}
+
+.MenuR{
+    background-color: peachpuff;
+    grid-area: MenuR; 
+    display: grid;
+    grid-template-areas: "linha1"
+                         "linha2"
+                         "linha3";
+                         grid-template-rows: 150px 1fr 150px;
+
+                                         
+}
+
+
+.MenuR .linha1{
+    background-color: plum;
+    grid-area: linha1;
+    text-align: center;
+    padding-top: 60px;
+   
+}
+.MenuR .linha1 p{
+    background-color: palevioletred;
+    
+
+}
+
+
+.MenuR .linha2{
+    background-color: paleturquoise;
+    grid-area: linha2;
+    text-align: center;
+    padding-top: 60px;
+   
+}
+.MenuR .linha3{
+    background-color: palevioletred;
+    grid-area: linha3;
+    text-align: center;
+    padding-top: 60px;
+   
+}
+.Main{ 
+    background-color: rgb(207, 42, 207);
+    grid-area: Main;
+    text-align: center;
+    padding-top: 220px;
+    
+    
+}
+
+.Footer{
+    background-color: powderblue;
+    grid-area: Footer;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Right{
+    background-color: rgb(175, 139, 231);
+    grid-area: Right;
+    display: grid;
+   
+    grid-template-areas: "l1  l4"
+                         "l2  l5"
+                         "l3  l6"
+                         "l7  l8";
+                         grid-template-rows: 100px 1fr 150px;
+                         grid-template-columns: 90px 1fr 100px; 
+                    
+}
+
+
+.Right  .l1{
+    background-color: rgb(235, 169, 207);
+    grid-area: l1;
+ 
+   
+}
+
+.Right .l1 p{
+    background-color: rgb(197, 153, 238);
+}
+.Right .l2{
+    background-color: rgb(163, 170, 235);
+    grid-area: l2;
+    
+   
+}
+.Right .l3{
+    background-color: rgb(157, 250, 139);
+    grid-area: l3;
+}
+
+.Right .l3 p{
+    background-color: rgb(214, 160, 178) ;
+
+}
+.Right .l4{
+    background-color: rgb(150, 204, 204);
+    grid-area: l4;
+}
+
+.Right .l5{
+    background-color: rgb(137, 196, 140);
+    grid-area: l5;
+}
+
+.Right .l6{
+    background-color: rgb(207, 127, 141);
+    grid-area: l6;
+
+}
+
+.Right .l6  p{
+    background-color: rgb(136, 207, 130);
+
+}
+.Right .l6 #p2 {
+    background-color: blueviolet;
+}
+
+.Right .l6  #p{
+    background-color: rgb(37, 214, 21);
+
+}
+
+
+.Right .l7{
+    background-color: rgb(146, 123, 199);
+    grid-area: l7;
+}
+
+.Right .l8{
+    background-color: rgb(231, 144, 158);
+    grid-area: l8;
+}
