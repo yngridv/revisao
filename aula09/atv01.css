@@ -1,0 +1,72 @@
+.box{
+    height: 650px;
+    display: grid;
+    grid-template-areas: "Header Header"
+                         "MenuR Lateral"
+                         "Footer Footer";
+    
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-columns: 1fr 100px;    
+    
+}
+
+.Header{
+    background-color: #606c38;
+    color: #dde0ab;
+    font-size: 30px;
+    grid-area: Header;
+    text-align: center;
+   
+   
+}
+
+.MenuR{
+    grid-area: MenuR;
+    text-align: center; 
+    display: flex;
+    background-color: #283618;
+    flex-direction: column;
+    
+}
+
+.c1, .c2, .c3{
+    width: 100%;
+    height: 33.33%;
+    background-color:#a1c181;
+
+}
+
+ .c2{
+    background-color: #656d4a;
+}
+
+
+.Lateral{ 
+    background-color: #414833;
+    grid-area: Lateral;
+    text-align: center;
+   
+}
+
+.Footer{
+
+    background-color: #fefae0 ;
+    grid-area: Footer;
+    text-align: center;
+    display: flex;
+    
+   
+}
+
+.p1, .p2, .p3{
+    width: 100%;
+    height: 150%;
+    background-color:  #a4ac86;
+
+
+
+}
+
+ .p2{
+    background-color: #606c38;
+}
